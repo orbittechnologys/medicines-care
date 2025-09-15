@@ -2,7 +2,7 @@ import { createServer } from "http";
 import app from "./app.js";
 import { connectDB } from "./utils/db.js";
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5120;
 
 (async () => {
   await connectDB();
