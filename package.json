@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/server.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node --env-file=.env src/server.js",
+    "serve": "cross-env NODE_ENV=development node --env-file=.env src/server.js",
     "start": "node --env-file=.env src/server.js",
     "import:csv": "node --env-file=.env scripts/import-from-csv.js \"A_Z_medicines_dataset_of_India.csv\""
   },
