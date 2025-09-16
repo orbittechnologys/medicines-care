@@ -4,7 +4,7 @@ import fs from "fs";
 import dotenv from "dotenv";
 import https from "https";
 import { connectDB } from "./utils/db.js";
-import appRoutes from "./routes/index.js";
+//import appRoutes from "./routes/index.js";
 
 // Load environment variables
 dotenv.config();
@@ -44,7 +44,7 @@ app.get("/health", (req, res) => {
 });
 
 // API Routes
-app.use("/api", appRoutes);
+//app.use("/api", appRoutes);
 
 // Server Initialization
 if (process.env.DEPLOY_ENV === "local") {
