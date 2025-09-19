@@ -1,0 +1,31 @@
+{
+  "name": "medicines-moin",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "serve": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "import:csv": "node scripts/import-from-csv.js ./data.csv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Moin Ahmed",
+  "license": "ISC",
+  "description": "This is a medicine API for managing medicines in a database.",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.1.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^7.0.0",
+    "lru-cache": "^11.2.1",
+    "mongoose": "^8.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
