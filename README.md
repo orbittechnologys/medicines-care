@@ -33,8 +33,8 @@ medicines
 
 ⚙️ Installation
 # clone repo
-git clone <your-repo-url>
-cd medicines-moin
+git clone https://github.com/orbittechnologys/medicines-care
+cd medicines-care
 
 # install dependencies
 npm install
@@ -44,10 +44,10 @@ Create a `.env` file in the root:
 API_KEY = your-api-key
 PORT = 4036
 DEPLOY_ENV = local
-MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/indianMedicine1
-SSL_CRT_PATH=/etc/letsencrypt/live/example.org/fullchain.pem
-SSL_KEY_PATH=/etc/letsencrypt/live/example.org/privkey.pem
-ALLOWED_ORIGINS=*
+MONGO_URI = mongodb+srv://<user>:<password>@<cluster>.mongodb.net/indianMedicine1
+SSL_CRT_PATH = /etc/letsencrypt/live/example.org/fullchain.pem
+SSL_KEY_PATH = /etc/letsencrypt/live/example.org/privkey.pem
+ALLOWED_ORIGINS = *
 
 ▶️ Run the Project
 Development:
