@@ -22,13 +22,13 @@ const allowedOrigins =
 
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     credentials: false,
   })
 );
 
-app.options("*", cors());
+/* app.options("*", cors()); */
 
 // body parser
 app.use(express.json());
