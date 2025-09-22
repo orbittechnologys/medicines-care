@@ -2,7 +2,10 @@ import Medicine from "../models/medicineModel.js";
 import { validationResult } from "express-validator";
 import { LRUCache } from "lru-cache";
 
-const cache = new LRUCache({ max: 500, ttl: 60_000 });
+const cache = new LRUCache({
+  max: 3000,
+  ttl: 300_000,
+});
 
 export async function list(req, res) {
   const errors = validationResult(req);
