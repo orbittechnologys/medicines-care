@@ -6,7 +6,6 @@ import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 
 import medicinesRoutes from "./routes/medicinesRoutes.js";
-import apiKeyMiddleware from "./middleware/apiKey.js";
 import errorHandler from "./middleware/error.js";
 
 const app = express();
@@ -42,7 +41,7 @@ app.use(morgan("dev"));
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 200 }));
 
 // API key check
-app.use("/api/v1", apiKeyMiddleware);
+/* app.use("/api/v1", apiKeyMiddleware); */
 
 // routes
 app.use("/api/v1/medicines", medicinesRoutes);
