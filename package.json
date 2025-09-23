@@ -7,6 +7,7 @@
     "serve": "node src/index.js",
     "dev": "nodemon src/index.js",
     "import:csv": "node scripts/import-from-csv.js ./data.csv",
+    "import:pincodes": "node scripts/importPincodes.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

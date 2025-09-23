@@ -3,8 +3,8 @@ import { validationResult } from "express-validator";
 import { LRUCache } from "lru-cache";
 
 const cache = new LRUCache({
-  max: 3000,
-  ttl: 300_000,
+  max: 5000,
+  ttl: 86_400_000, // 24 hours in ms
 });
 
 export async function list(req, res) {
